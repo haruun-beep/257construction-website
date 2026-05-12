@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #ffffff;
+  font-family: var(--font-inter);
+  overflow-x: hidden;
+}
+
+/* Orange scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #F97316; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #EA6C0A; }
+
+/* Noise grain overlay */
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-track {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Orange diagonal stripe */
+.orange-stripe {
+  background: linear-gradient(135deg, transparent 45%, rgba(249,115,22,0.15) 45%, rgba(249,115,22,0.15) 55%, transparent 55%);
+}
+
+/* Form inputs */
+.form-input {
+  @apply w-full bg-surface-2 border border-white/10 text-white placeholder-gray-500 rounded-none px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors duration-200;
+}
+
+.form-select {
+  @apply w-full bg-surface-2 border border-white/10 text-white rounded-none px-4 py-3 text-sm focus:outline-none focus:border-brand transition-colors duration-200 appearance-none cursor-pointer;
+}
+
+/* Calendar dark theme */
+.rdp {
+  --rdp-cell-size: 42px;
+  --rdp-accent-color: #F97316;
+  --rdp-background-color: rgba(249,115,22,0.15);
+  --rdp-accent-color-dark: #EA6C0A;
+  --rdp-background-color-dark: rgba(249,115,22,0.2);
+  --rdp-outline: 2px solid #F97316;
+  --rdp-outline-selected: 3px solid #F97316;
+  background: #111111;
+  padding: 1.5rem;
+  color: white;
+  border: 1px solid rgba(249,115,22,0.2);
+}
+
+.rdp-months { justify-content: center; }
+.rdp-caption_label { color: white; font-weight: 700; font-size: 1rem; }
+.rdp-nav_button { color: #F97316; }
+.rdp-nav_button:hover { background: rgba(249,115,22,0.1); }
+.rdp-head_cell { color: #9CA3AF; font-weight: 600; font-size: 0.75rem; }
+.rdp-day { color: white; border-radius: 0; }
+.rdp-day:hover:not(.rdp-day_disabled):not(.rdp-day_selected) {
+  background: rgba(249,115,22,0.15);
+  color: #F97316;
+}
+.rdp-day_selected { background: #F97316 !important; color: black !important; font-weight: 700; }
+.rdp-day_today:not(.rdp-day_selected) { border: 1px solid #F97316; color: #F97316; }
+.rdp-day_disabled { color: #374151; opacity: 0.4; }
+.rdp-day_outside { color: #374151; }
