@@ -3,6 +3,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingCTA from '@/components/FloatingCTA'
+import ChatBot from '@/components/ChatBot'
 
 export const metadata: Metadata = {
   title: '25/7 Construction Ltd. | Edmonton Excavation, Fencing & Renovation Contractors',
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <FloatingCTA />
+        <ChatBot />
       </body>
     </html>
   )
