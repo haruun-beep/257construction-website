@@ -13,18 +13,18 @@ import AnimatedCounter from '@/components/AnimatedCounter'
 import MarqueePartners from '@/components/MarqueePartners'
 
 const IMAGES = {
-  heroWide1: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',
-  heroWide2: 'https://static.wixstatic.com/media/c837a6_ff17ef7473f04d19bbacf6161681a26c~mv2.jpg',
-  teamSite1: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',
-  portfolioExterior: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',
-  portfolioCommercial: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',
-  portfolioResidential: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg',
-  serviceExcavation: 'https://static.wixstatic.com/media/11062b_9870f6f1174c4346a596dfcc7149096bf000.jpg',
-  serviceFencing: 'https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg',
-  serviceRenovations: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',
-  serviceLandscape: 'https://static.wixstatic.com/media/c837a6_8a5b905c90f546a7aac3c212d86b60be~mv2.jpg',
-  serviceDitch: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
-  siteAction1: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',
+  heroWide1: 'https://static.wixstatic.com/media/618f79_6deaa5ce90cb496e88f9c342ee1df818~mv2.png',         // CAT bulldozers grading road
+  heroWide2: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',         // aerial house framing + telehandler
+  teamSite1: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',         // house framing under construction
+  portfolioExterior: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg', // worker on house exterior
+  portfolioCommercial: 'https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg', // commercial office building
+  portfolioResidential: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg', // completed residential subdivision
+  serviceExcavation: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',  // Kubota excavator on site
+  serviceFencing: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',      // wood privacy fence installed
+  serviceRenovations: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',  // completed residential row
+  serviceLandscape: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',    // aerial landscaped park
+  serviceDitch: 'https://static.wixstatic.com/media/11062b_9870f6f1174c4346a596dfcc7149096bf000.jpg',        // tractor/combine in field
+  siteAction1: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',         // construction managers on site
 }
 
 const fadeUp = {

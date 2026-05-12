@@ -9,11 +9,11 @@ import AnimatedCounter from '@/components/AnimatedCounter'
 import MarqueePartners from '@/components/MarqueePartners'
 
 const IMAGES = {
-  siteAction2: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
-  teamSite1: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',
-  siteAction1: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',
-  heroWide1: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',
-  siteAction3: 'https://static.wixstatic.com/media/11062b_7c13d53ba87a43c5b3ff8e73ee261a61~mv2.jpg',
+  siteAction2: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',  // 3 managers on site → hero
+  teamSite1: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',    // house framing → our story
+  siteAction1: 'https://static.wixstatic.com/media/c837a6_8a5b905c90f546a7aac3c212d86b60be~mv2.jpg',  // workers reviewing blueprints → CEO photo
+  heroWide1: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',    // residential subdivision (unused)
+  siteAction3: 'https://static.wixstatic.com/media/11062b_7c13d53ba87a43c5b3ff8e73ee261a61~mv2.jpg',  // skid steer on site → safety section
 }
 
 const fadeUp = {

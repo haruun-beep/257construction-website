@@ -8,14 +8,14 @@ import { ArrowRight, CheckCircle, HardHat } from 'lucide-react'
 import type { Metadata } from 'next'
 
 const IMAGES = {
-  serviceExcavation: 'https://static.wixstatic.com/media/11062b_9870f6f1174c4346a596dfcc7149096bf000.jpg',
-  serviceFencing: 'https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg',
-  serviceRenovations: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',
-  serviceLandscape: 'https://static.wixstatic.com/media/c837a6_8a5b905c90f546a7aac3c212d86b60be~mv2.jpg',
-  serviceDitch: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
-  siteManagement: 'https://static.wixstatic.com/media/618f79_6deaa5ce90cb496e88f9c342ee1df818~mv2.png',
-  project1: 'https://static.wixstatic.com/media/c837a6_dee7a2e1feb74cafac46d4e0b2bf44d7~mv2.jpg',
-  siteAction1: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',
+  serviceExcavation: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',  // Kubota excavator on site
+  serviceFencing: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',      // wood privacy fence installed
+  serviceRenovations: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg', // worker on house exterior
+  serviceLandscape: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',    // aerial landscaped park
+  serviceDitch: 'https://static.wixstatic.com/media/11062b_9870f6f1174c4346a596dfcc7149096bf000.jpg',        // tractor/combine in field
+  siteManagement: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',      // construction managers on site
+  project1: 'https://static.wixstatic.com/media/618f79_6deaa5ce90cb496e88f9c342ee1df818~mv2.png',           // CAT bulldozers grading road
+  siteAction1: 'https://static.wixstatic.com/media/11062b_7c13d53ba87a43c5b3ff8e73ee261a61~mv2.jpg',        // skid steer loader on site
 }
 
 const services = [

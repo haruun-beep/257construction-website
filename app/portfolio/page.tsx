@@ -8,30 +8,33 @@ import { ArrowRight, MapPin } from 'lucide-react'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 const IMAGES = {
-  portfolioExterior: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',
-  portfolioCommercial: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',
-  portfolioResidential: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg',
-  project1: 'https://static.wixstatic.com/media/c837a6_dee7a2e1feb74cafac46d4e0b2bf44d7~mv2.jpg',
-  project2: 'https://static.wixstatic.com/media/c837a6_0c85a01871584b379bdb4a5f261ddf53~mv2.jpg',
-  project3: 'https://static.wixstatic.com/media/c837a6_c5afd1e1cd2042a4bc55b49fb93a8573~mv2.jpg',
-  heroWide1: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',
-  siteAction1: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',
-  siteAction2: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
+  fence: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',
+  excavatorKubota: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',
+  workerExterior: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg',
+  housesRow: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',
+  parkAerial: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
+  houseFraming: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',
+  framingAerial: 'https://static.wixstatic.com/media/c837a6_ae4f4741c31844bfba715de2983231fdf000.jpg',
+  catBulldozers: 'https://static.wixstatic.com/media/618f79_6deaa5ce90cb496e88f9c342ee1df818~mv2.png',
+  managersOnSite: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
+  modernBuilding: 'https://static.wixstatic.com/media/c837a6_0c85a01871584b379bdb4a5f261ddf53~mv2.jpg',
+  officeRender: 'https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg',
+  suburbanAerial: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',
 }
 
 const allProjects = [
-  { img: IMAGES.portfolioExterior, cat: 'Exterior Renovations', loc: 'Edmonton, AB', year: '2024' },
-  { img: IMAGES.portfolioCommercial, cat: 'Commercial Construction', loc: 'Fort McMurray, AB', year: '2023' },
-  { img: IMAGES.portfolioResidential, cat: 'Residential', loc: 'Spruce Grove, AB', year: '2024' },
-  { img: IMAGES.project1, cat: 'Excavation', loc: 'Leduc County, AB', year: '2023' },
-  { img: IMAGES.project2, cat: 'Landscaping', loc: 'St. Albert, AB', year: '2024' },
-  { img: IMAGES.project3, cat: 'Fencing', loc: 'Edmonton, AB', year: '2023' },
-  { img: IMAGES.heroWide1, cat: 'Commercial Construction', loc: 'Edmonton, AB', year: '2022' },
-  { img: IMAGES.siteAction1, cat: 'Excavation', loc: 'Nisku, AB', year: '2024' },
-  { img: IMAGES.siteAction2, cat: 'Fencing', loc: 'Sherwood Park, AB', year: '2023' },
-  { img: IMAGES.portfolioCommercial, cat: 'Residential', loc: 'Calgary, AB', year: '2022' },
-  { img: IMAGES.project1, cat: 'Landscaping', loc: 'Fort Saskatchewan, AB', year: '2024' },
-  { img: IMAGES.portfolioExterior, cat: 'Exterior Renovations', loc: 'Beaumont, AB', year: '2023' },
+  { img: IMAGES.workerExterior, cat: 'Exterior Renovations', loc: 'Edmonton, AB', year: '2024' },
+  { img: IMAGES.excavatorKubota, cat: 'Excavation', loc: 'Fort McMurray, AB', year: '2023' },
+  { img: IMAGES.fence, cat: 'Fencing', loc: 'Edmonton, AB', year: '2024' },
+  { img: IMAGES.catBulldozers, cat: 'Excavation', loc: 'Leduc County, AB', year: '2023' },
+  { img: IMAGES.parkAerial, cat: 'Landscaping', loc: 'St. Albert, AB', year: '2024' },
+  { img: IMAGES.suburbanAerial, cat: 'Residential', loc: 'Spruce Grove, AB', year: '2024' },
+  { img: IMAGES.officeRender, cat: 'Commercial Construction', loc: 'Edmonton, AB', year: '2022' },
+  { img: IMAGES.framingAerial, cat: 'Residential', loc: 'Nisku, AB', year: '2024' },
+  { img: IMAGES.managersOnSite, cat: 'Commercial Construction', loc: 'Sherwood Park, AB', year: '2023' },
+  { img: IMAGES.housesRow, cat: 'Residential', loc: 'Calgary, AB', year: '2022' },
+  { img: IMAGES.houseFraming, cat: 'Exterior Renovations', loc: 'Fort Saskatchewan, AB', year: '2024' },
+  { img: IMAGES.modernBuilding, cat: 'Commercial Construction', loc: 'Beaumont, AB', year: '2023' },
 ]
 
 const categories = ['All', 'Exterior Renovations', 'Commercial Construction', 'Residential', 'Excavation', 'Fencing', 'Landscaping']
@@ -51,7 +54,7 @@ export default function PortfolioPage() {
       {/* Hero */}
       <section ref={heroRef} className="relative h-[60vh] flex items-end pb-20 overflow-hidden">
         <motion.div style={{ y: heroY }} className="absolute inset-0">
-          <Image src={IMAGES.portfolioCommercial} alt="Construction portfolio" fill priority className="object-cover" />
+          <Image src={IMAGES.catBulldozers} alt="Construction portfolio" fill priority className="object-cover" />
           <div className="absolute inset-0 bg-black/70" />
           <div className="absolute inset-0 bg-gradient-to-t from-bg-base via-black/20 to-transparent" />
         </motion.div>
