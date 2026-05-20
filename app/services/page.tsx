@@ -8,14 +8,14 @@ import { ArrowRight, CheckCircle, HardHat } from 'lucide-react'
 import type { Metadata } from 'next'
 
 const IMAGES = {
-  serviceExcavation: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',  // Kubota excavator on site
-  serviceFencing: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',      // wood privacy fence installed
-  serviceRenovations: 'https://static.wixstatic.com/media/c837a6_47223d00a4af4c01bde4b5a6b06ea3ad~mv2.jpg',  // house framing under active construction
-  serviceLandscape: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg',    // aerial landscaped residential development
-  serviceDitch: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',        // aerial park with mowed grass patterns
-  siteManagement: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',      // construction managers on site
-  project1: 'https://static.wixstatic.com/media/c837a6_dee7a2e1feb74cafac46d4e0b2bf44d7~mv2.jpg',           // aerial highway interchange — land development scale
-  siteAction1: 'https://static.wixstatic.com/media/11062b_7c13d53ba87a43c5b3ff8e73ee261a61~mv2.jpg',        // skid steer loader on site
+  serviceExcavation: '/images/graders-winter.jpg',       // two Champion graders on site in winter
+  serviceFencing: '/images/residential-yard-fence.jpg',  // completed residential yard with fence
+  serviceRenovations: '/images/demolition-skidsteer.jpg', // skid steer clearing demolition debris
+  serviceLandscape: '/images/gravel-landscape.jpg',      // gravel area with retaining wall and trees
+  serviceDitch: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
+  siteManagement: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
+  project1: 'https://static.wixstatic.com/media/c837a6_dee7a2e1feb74cafac46d4e0b2bf44d7~mv2.jpg',
+  siteAction1: 'https://static.wixstatic.com/media/11062b_7c13d53ba87a43c5b3ff8e73ee261a61~mv2.jpg',
 }
 
 const services = [
