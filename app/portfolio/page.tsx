@@ -8,8 +8,10 @@ import { ArrowRight, MapPin } from 'lucide-react'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 const IMAGES = {
-  fence: 'https://static.wixstatic.com/media/618f79_15b0eea91c20474b99a03cf231433c05~mv2.jpg',
-  excavatorKubota: 'https://static.wixstatic.com/media/618f79_f87ecf3ecec44301974780f939a6598e~mv2.jpeg',
+  fence: '/images/residential-yard-fence.jpg',           // completed residential yard with fence
+  gravelLandscape: '/images/gravel-landscape.jpg',       // gravel area with retaining wall and trees
+  gradersWinter: '/images/graders-winter.jpg',           // two Champion graders on site in winter
+  demolitionSkidsteer: '/images/demolition-skidsteer.jpg', // skid steer clearing demolition debris
   workerExterior: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg',
   housesRow: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',
   parkAerial: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
@@ -23,9 +25,11 @@ const IMAGES = {
 }
 
 const allProjects = [
-  { img: IMAGES.workerExterior, cat: 'Exterior Renovations', loc: 'Edmonton, AB', year: '2024' },
-  { img: IMAGES.excavatorKubota, cat: 'Excavation', loc: 'Fort McMurray, AB', year: '2023' },
   { img: IMAGES.fence, cat: 'Fencing', loc: 'Edmonton, AB', year: '2024' },
+  { img: IMAGES.gravelLandscape, cat: 'Landscaping', loc: 'Alberta', year: '2025' },
+  { img: IMAGES.gradersWinter, cat: 'Excavation', loc: 'Edmonton, AB', year: '2025' },
+  { img: IMAGES.demolitionSkidsteer, cat: 'Exterior Renovations', loc: 'Alberta', year: '2025' },
+  { img: IMAGES.workerExterior, cat: 'Exterior Renovations', loc: 'Edmonton, AB', year: '2024' },
   { img: IMAGES.catBulldozers, cat: 'Excavation', loc: 'Leduc County, AB', year: '2023' },
   { img: IMAGES.parkAerial, cat: 'Landscaping', loc: 'St. Albert, AB', year: '2024' },
   { img: IMAGES.suburbanAerial, cat: 'Residential', loc: 'Spruce Grove, AB', year: '2024' },

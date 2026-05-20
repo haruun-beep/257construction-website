@@ -149,6 +149,28 @@ export default function Footer() {
             Licensed · Bonded · Insured · WCB Alberta Compliant
           </p>
         </div>
+        <div className="border-t border-white/5 py-3 text-center">
+          <p className="text-gray-600 text-xs">
+            Built by{' '}
+            <a
+              href="https://BespokeAutomations.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand/70 hover:text-brand transition-colors"
+            >
+              Bespoke Automations
+            </a>
+            {' '}&amp;{' '}
+            <a
+              href="https://UnconventionalGroup.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand/70 hover:text-brand transition-colors"
+            >
+              Unconventional Group
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )
