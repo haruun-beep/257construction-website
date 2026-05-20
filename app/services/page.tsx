@@ -8,10 +8,10 @@ import { ArrowRight, CheckCircle, HardHat } from 'lucide-react'
 import type { Metadata } from 'next'
 
 const IMAGES = {
-  serviceExcavation: '/images/graders-winter.jpg',       // two Champion graders on site in winter
-  serviceFencing: '/images/residential-yard-fence.jpg',  // completed residential yard with fence
-  serviceRenovations: '/images/demolition-skidsteer.jpg', // skid steer clearing demolition debris
-  serviceLandscape: '/images/gravel-landscape.jpg',      // gravel area with retaining wall and trees
+  serviceExcavation: '/images/graders-winter.jpg.jpg',
+  serviceFencing: '/images/residential-yard-fence.jpg.jpg',
+  serviceRenovations: '/images/demolition-skidsteer.jpg.jpg',
+  serviceLandscape: '/images/gravel-landscape.jpg.jpg',
   serviceDitch: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
   siteManagement: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
   project1: 'https://static.wixstatic.com/media/c837a6_dee7a2e1feb74cafac46d4e0b2bf44d7~mv2.jpg',

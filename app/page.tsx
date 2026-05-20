@@ -19,10 +19,10 @@ const IMAGES = {
   portfolioExterior: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg', // worker on house exterior
   portfolioCommercial: 'https://static.wixstatic.com/media/c837a6_922c11766e1248a4ba69c5b5747d336a~mv2.jpg', // commercial office building
   portfolioResidential: 'https://static.wixstatic.com/media/c837a6_fc28a5319ffc455fa1c27399ba1c58d9~mv2.jpg', // completed residential subdivision
-  serviceExcavation: '/images/graders-winter.jpg',       // two Champion graders on site in winter
-  serviceFencing: '/images/residential-yard-fence.jpg',  // completed residential yard with fence
-  serviceRenovations: '/images/demolition-skidsteer.jpg', // skid steer clearing demolition debris
-  serviceLandscape: '/images/gravel-landscape.jpg',      // gravel area with retaining wall and trees
+  serviceExcavation: '/images/graders-winter.jpg.jpg',
+  serviceFencing: '/images/residential-yard-fence.jpg.jpg',
+  serviceRenovations: '/images/demolition-skidsteer.jpg.jpg',
+  serviceLandscape: '/images/gravel-landscape.jpg.jpg',
   serviceDitch: 'https://static.wixstatic.com/media/11062b_9870f6f1174c4346a596dfcc7149096bf000.jpg',
   siteAction1: 'https://static.wixstatic.com/media/c837a6_eb05560eb8764160936d511f9cb1af73~mv2.jpg',
 }
@@ -54,8 +54,8 @@ const pillars = [
 
 const projects = [
   { img: IMAGES.portfolioExterior, cat: 'Exterior Renovation', loc: 'Edmonton, AB' },
-  { img: '/images/gravel-landscape.jpg', cat: 'Landscape Construction', loc: 'Alberta' },
-  { img: '/images/residential-yard-fence.jpg', cat: 'Fencing', loc: 'Edmonton, AB' },
+  { img: '/images/gravel-landscape.jpg.jpg', cat: 'Landscape Construction', loc: 'Alberta' },
+  { img: '/images/residential-yard-fence.jpg.jpg', cat: 'Fencing', loc: 'Edmonton, AB' },
 ]
 
 const govServices = [

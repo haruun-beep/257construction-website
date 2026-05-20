@@ -8,10 +8,10 @@ import { ArrowRight, MapPin } from 'lucide-react'
 import AnimatedCounter from '@/components/AnimatedCounter'
 
 const IMAGES = {
-  fence: '/images/residential-yard-fence.jpg',           // completed residential yard with fence
-  gravelLandscape: '/images/gravel-landscape.jpg',       // gravel area with retaining wall and trees
-  gradersWinter: '/images/graders-winter.jpg',           // two Champion graders on site in winter
-  demolitionSkidsteer: '/images/demolition-skidsteer.jpg', // skid steer clearing demolition debris
+  fence: '/images/residential-yard-fence.jpg.jpg',
+  gravelLandscape: '/images/gravel-landscape.jpg.jpg',
+  gradersWinter: '/images/graders-winter.jpg.jpg',
+  demolitionSkidsteer: '/images/demolition-skidsteer.jpg.jpg',
   workerExterior: 'https://static.wixstatic.com/media/618f79_c92fac31af7b4b9e801fc7b295a482ca~mv2.jpeg',
   housesRow: 'https://static.wixstatic.com/media/c837a6_9045f280be72474491617fe62485c878~mv2.jpg',
   parkAerial: 'https://static.wixstatic.com/media/11062b_cdc62dad3d5945fb9c7aedaaadf3fbbf~mv2.jpg',
