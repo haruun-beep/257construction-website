@@ -180,17 +180,6 @@ export default function ContactPage() {
                   </a>
                 </div>
                 <div className="border-b border-white/5 pb-6">
-                  <a href="tel:7808514048" className="flex items-center gap-4 group">
-                    <div className="w-10 h-10 bg-brand/10 border border-brand/30 flex items-center justify-center flex-shrink-0 group-hover:bg-brand/20 transition-colors">
-                      <Phone size={16} className="text-brand" />
-                    </div>
-                    <div>
-                      <p className="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Phone (Secondary)</p>
-                      <p className="text-white font-semibold group-hover:text-brand transition-colors">780-851-4048</p>
-                    </div>
-                  </a>
-                </div>
-                <div className="border-b border-white/5 pb-6">
                   <a href="mailto:257Construction@gmail.com" className="flex items-center gap-4 group">
                     <div className="w-10 h-10 bg-brand/10 border border-brand/30 flex items-center justify-center flex-shrink-0 group-hover:bg-brand/20 transition-colors">
                       <Mail size={16} className="text-brand" />
@@ -220,7 +209,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="text-gray-500 text-xs uppercase tracking-wider mb-0.5">Hours</p>
-                      <p className="text-white font-semibold">Mon–Sat, 7:00 AM – 6:00 PM</p>
+                      <p className="text-white font-semibold">Mon–Sun, 7:00 AM – 6:00 PM</p>
                       <p className="text-gray-400 text-sm">Emergency calls accepted</p>
                     </div>
                   </div>

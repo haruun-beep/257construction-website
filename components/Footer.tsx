@@ -115,12 +115,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:7808514048" className="flex items-start gap-3 text-gray-400 hover:text-brand transition-colors group">
-                  <Phone size={16} className="mt-0.5 text-brand flex-shrink-0" />
-                  <span className="text-sm">780-851-4048</span>
-                </a>
-              </li>
-              <li>
                 <a href="mailto:257Construction@gmail.com" className="flex items-start gap-3 text-gray-400 hover:text-brand transition-colors">
                   <Mail size={16} className="mt-0.5 text-brand flex-shrink-0" />
                   <span className="text-sm break-all">257Construction@gmail.com</span>
@@ -132,7 +126,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <Clock size={16} className="mt-0.5 text-brand flex-shrink-0" />
-                <span className="text-sm">Mon–Sat, 7AM–6PM</span>
+                <span className="text-sm">Mon–Sun, 7AM–6PM</span>
               </li>
             </ul>
           </div>

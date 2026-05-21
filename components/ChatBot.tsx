@@ -15,10 +15,9 @@ type Message = {
 
 const COMPANY = {
   phone1: '825-461-2378',
-  phone2: '780-851-4048',
   email: '257Construction@gmail.com',
   location: 'Edmonton, AB — serving all of Alberta',
-  hours: 'Mon–Sat, 7AM–6PM',
+  hours: 'Mon–Sun, 7AM–6PM',
   ceo: 'Alex Phimester',
   founded: '2020',
   stats: '130+ projects, 17 employees, 6 business partners',
