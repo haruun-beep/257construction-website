@@ -126,7 +126,7 @@ const intents: Intent[] = [
   {
     patterns: ['contact', 'phone', 'number', 'email', 'reach', 'call', 'get in touch', 'talk'],
     respond: () => ({
-      text: `Here's how to reach us:\n\n📞 ${COMPANY.phone1}\n📞 ${COMPANY.phone2}\n📧 ${COMPANY.email}\n📍 ${COMPANY.location}\n🕐 ${COMPANY.hours}`,
+      text: `Here's how to reach us:\n\n📞 ${COMPANY.phone1}\n📧 ${COMPANY.email}\n📍 ${COMPANY.location}\n🕐 ${COMPANY.hours}`,
       quickReplies: ['Book an appointment', 'Get a quote'],
       link: { label: 'Contact Page →', href: '/contact' },
     }),
