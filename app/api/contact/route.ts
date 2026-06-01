@@ -46,9 +46,8 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         access_key: process.env.WEB3FORMS_ACCESS_KEY,
         subject,
-        from_name: '25/7 Construction Website',
+        from_name: fullName,
         replyto: email,
-        email: TO_EMAIL,
         message,
       }),
     })
