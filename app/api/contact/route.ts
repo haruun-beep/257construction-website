@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
-const TO_EMAIL = '257Construction@gmail.com'
+const TO_EMAIL = 'info@257construction.com'
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -52,7 +52,7 @@ export async function POST(req: NextRequest) {
           <div style="margin-top: 24px; padding: 16px; background: #111; border-left: 3px solid #F97316;">
             <p style="margin: 0; color: #9CA3AF; font-size: 13px;">Call this person at ${bookingDate}, ${bookingTime} MT. Their email is <strong style="color: #F97316;">${email}</strong></p>
           </div>
-          <p style="margin-top: 24px; color: #374151; font-size: 11px;">25/7 Construction Ltd. | Edmonton, AB | 825-461-2378</p>
+          <p style="margin-top: 24px; color: #374151; font-size: 11px;">25/7 Construction Ltd. | Edmonton, AB | 825-461-2378 | info@257construction.com</p>
         </div>
       `
       : `
