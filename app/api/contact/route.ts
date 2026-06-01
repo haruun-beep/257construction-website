@@ -40,35 +40,27 @@ export async function POST(req: NextRequest) {
           description ? `\nDescription:\n${description}` : '',
         ].join('\n')
 
-    if (!process.env.WEB3FORMS_ACCESS_KEY) {
-      console.error('WEB3FORMS_ACCESS_KEY is not set')
+    if (!process.env.FORMSPREE_FORM_ID) {
+      console.error('FORMSPREE_FORM_ID is not set')
       return NextResponse.json({ error: 'Email service not configured' }, { status: 500 })
     }
 
-    const res = await fetch('https://api.web3forms.com/submit', {
+    const res = await fetch(`https://formspree.io/f/${process.env.FORMSPREE_FORM_ID}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_ACCESS_KEY,
-        subject,
-        from_name: fullName,
-        replyto: email,
+        _subject: subject,
+        _replyto: email,
+        name: fullName,
         message,
       }),
     })
 
-    const contentType = res.headers.get('content-type') || ''
-    if (!contentType.includes('application/json')) {
-      const text = await res.text()
-      console.error('Web3Forms non-JSON response:', text.slice(0, 300))
-      return NextResponse.json({ error: 'Email service error — please call us directly' }, { status: 500 })
-    }
+    const data = await res.json().catch(() => ({}))
 
-    const data = await res.json()
-
-    if (!res.ok || !data.success) {
-      console.error('Web3Forms error:', data)
-      return NextResponse.json({ error: data.message || 'Failed to send' }, { status: 500 })
+    if (!res.ok) {
+      console.error('Formspree error:', data)
+      return NextResponse.json({ error: 'Failed to send — please call us directly' }, { status: 500 })
     }
 
     return NextResponse.json({ success: true })
