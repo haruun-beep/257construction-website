@@ -80,7 +80,9 @@ export default function ContactPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       })
-      const data = await res.json()
+      const data = res.headers.get('content-type')?.includes('application/json')
+        ? await res.json()
+        : {}
       if (!res.ok) throw new Error(data.error || 'Failed to send')
       setStatus('success')
     } catch (err: any) {
